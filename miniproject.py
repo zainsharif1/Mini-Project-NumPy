@@ -8,3 +8,6 @@ ave_cols = X.mean(axis=0)
 
 # Standard Deviation of the values in each column of X
 std_cols = X.std(axis=0)
+
+# Mean normalize X
+X_norm = (X-ave_cols)/std_cols
